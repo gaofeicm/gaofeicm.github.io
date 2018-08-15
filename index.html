@@ -36,18 +36,6 @@ $(function(){
       $(".blog").click(function(){
 	    alert("为保证项目处于可运行状态，该功能暂时下线");
      });
-    layui.use('layer', function(){ //独立版的layer无需执行这一句
-  		var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
-  		layer.open({
-		  type: 2,
-		  skin: 'layui-layer-demo', //样式类名
-		  title: false,
-		  anim: 1,
-		  shadeClose: true, //开启遮罩关闭
-		  offset: ['250px','500px'] ,
-		  content: 'ServerEnd.html'
-		});
-  	});
 });
 </script>
 </head>
