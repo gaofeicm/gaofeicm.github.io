@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.configuration.xml.reload" value="true"/>
+	<package name="UserStruts" extends="struts-default">
+		<action name="regist" class="com.gaofeicm.action.UserAction" method="reg">
+			<result name="success" type="redirectAction">login</result>
+		</action>
+		<action name="login">
+			<result name="success">../login/login.jsp</result>
+		</action>
+	</package>
+	<package name="UserJson" extends="json-default">
+		<action name="reg" class="com.gaofeicm.action.UserAction" method="reg">
+			<result name="success" type="json">
+				<param name="includeproperties">flag,msg</param>
+			</result>
+		</action>
+	</package>
+	<package name="check" extends="struts-default">
+		<action name="checkIp" class="com.gaofeicm.util.IPUtil" method="checkIp">
+			
+		</action>
+	</package>
+	<package name="tools" extends="json-default">
+		<action name="telFrom" class="com.gaofeicm.util.TelFromUtil" method="telFrom">
+			<result name="success" type="json">
+				<param name="root">msg</param>
+			</result>
+			<result name="error"></result>
+		</action>
+	</package>
+</struts>    
