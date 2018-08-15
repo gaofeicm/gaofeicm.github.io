@@ -1,6 +1,6 @@
 ## Welcome to Gaofeicm
 
- 你好，欢迎来到Gaofeicm,一个个人的网站
+ 你好，欢迎来到Gaofeicm，这是一个梦想开始的地方
 
 ### Time
 
@@ -10,7 +10,7 @@
 
 ```markdown
 
-每一次的代码编写，都是为了一个渺小的程序员梦想
+   每一次的代码编写，都是为了一个渺小的程序员梦想
   
    通过指尖代码的敲击，给你带来一个不一样的网站体验
    
@@ -24,10 +24,16 @@
 
 ```
 
-### Jekyll Themes
+### 空白
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gaofeicm/gaofeicm.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+这里什么都还没有，一切等着你来填充
 
-### Support or Contact
+### 文章
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+To Be Continued
+
+
+
+
+                                                                                                                 Write by Gaofeicm
+                                                                                                            2018 - 08 - 15  15 : 35 : 42
