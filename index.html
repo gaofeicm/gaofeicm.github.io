@@ -187,7 +187,8 @@
 </section>
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script type="text/javascript">
-  document.getElementById("playvideo").contentWindow.document.getElementsByTagName("video").removeAttribute("autoplay");
+  var playvideo = document.getElementById("playvideo").contentWindow.document.getElementsByTagName("video");
+  playvideo.removeAttribute("autoplay");
   </script>
   <script src="assets/tether/tether.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
