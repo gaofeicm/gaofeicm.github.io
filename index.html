@@ -155,7 +155,7 @@
                   <div><a class="btn btn-black">Good</a> <a class="btn btn-black">Bad</a></div>
               </div>
               <div class="mbr-table-cell mbr-left-padding-md-up mbr-valign-top col-md-7 image-size" style="width: 50%;">
-                  <div class="mbr-figure"><iframe class="mbr-embedded-video" src="assets/videos/dream.mp4" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
+                  <div class="mbr-figure"><iframe id="playvideo" class="mbr-embedded-video" src="assets/videos/dream.mp4" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
               </div>
             </div>
         </div>
@@ -186,6 +186,9 @@
     </div>
 </section>
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script type="text/javascript">
+  document.getElementById("playvideo").contentWindow.document.getElementsByTagName("video").removeAttribute("autoplay");
+  </script>
   <script src="assets/tether/tether.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/smooth-scroll/smooth-scroll.js"></script>
