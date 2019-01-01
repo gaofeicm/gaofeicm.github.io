@@ -748,7 +748,9 @@ h6,
   }
 }
 #header3-k .mbr-section-title,
-#header3-k .mbr-section-subtitle {
+#header3-k .mbr-section-subtitle,
+#header4-k .mbr-section-title,
+#header4-k .mbr-section-subtitle {
   text-align: center;
 }
 #content1-j DIV {
