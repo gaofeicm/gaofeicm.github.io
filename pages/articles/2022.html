@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="../../assets/mobirise/css/mbr-additional.css" type="text/css">
 </head>
 <body>
-<audio controls="controls" loop="loop" autoplay="autoplay">
+<audio id="audio1" loop="loop" autoplay="autoplay">
 	<source src="https://www.gaofeicm.cn/assets/music/kucha.mp3" type="audio/mpeg" />
 </audio>
 <div id="menu-0" custom-code="true">
@@ -147,5 +147,18 @@
   <script src="../../assets/jarallax/jarallax.js"></script>
   <script src="../../assets/theme/js/script.js"></script>
   <input name="animation" type="hidden">
+  <script type="text/javascript">
+  	window.onload = function(){
+             setInterval("toggleSound()",100);
+        }
+
+    function toggleSound() {
+                var music = document.getElementById("audio1");//获取ID  
+                if (music.paused) { //判读是否播放  
+                    music.paused=false;
+                    music.play(); //没有就播放 
+                }    
+        }
+  </script>
   </body>
 </html>
