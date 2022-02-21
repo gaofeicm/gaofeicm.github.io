@@ -19,8 +19,6 @@
   <link rel="stylesheet" href="../../assets/animate.css/animate.min.css">
   <link rel="stylesheet" href="../../assets/theme/css/style.css">
   <link rel="stylesheet" href="../../assets/mobirise/css/mbr-additional.css" type="text/css">
-  <link rel="stylesheet" href="../../assets/layui/css/layui.css">
-  <script type="text/javascript" src="../../assets/layui/layui.js"></script>
   <style type="text/css">
 	.jdj,.jdt{
 		color: blue;
@@ -45,8 +43,8 @@
                 <div style="text-align: center;">修改：gaofeicm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时间：2022-02-19</div><br /><br />
 <b>01-京东极速版</b>&nbsp;&nbsp;&nbsp;&nbsp;
 <a id="jdjsyj" href="javascript:void(0);" style="color: red;font-size:14px;">一键领取</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://home.m.jd.com/myJd/newhome.action" style="color: blue;font-size:14px;">登录</a>
-<span id="open">测试</span>
+<a href="https://home.m.jd.com/myJd/newhome.action" style="color: blue;font-size:14px;">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<span id="open" style="color: green;font-size:14px;">测试</span>
 <br /><br />
 
 1、5-2(10/15/18)：<a href="https://sourl.cn/Uxke5p" target="_blank"><span class="jdj">https://sourl.cn/Uxke5p</span></a><br /><br />
@@ -61,17 +59,24 @@
 
 <b>02-京东图书</b>&nbsp;&nbsp;&nbsp;&nbsp;
 <a id="jdtsyj" href="javascript:void(0);" style="color: red;font-size:14px;">一键领取</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://home.m.jd.com/myJd/newhome.action" style="color: blue;font-size:14px;">登录</a>
-<span id="open">测试</span>
+<a href="https://u.jd.com/0MoyMhI" style="color: blue;font-size:14px;">活动页</a>
 <br /><br />
 
-1、400-50(9/12/15/17/20)：<a href="https://sourl.cn/yvULeU" target="_blank"><span class="jdt">https://sourl.cn/yvULeU</span></a><br /><br />
+1、400-50(0/9/13/18/20)：<a href="https://sourl.cn/yvULeU" target="_blank"><span class="jdt">https://sourl.cn/yvULeU</span></a><br /><br />
 
-2、1000-100(9/12/15/17/20)：<a href="https://sourl.cn/Z9SgrZ" target="_blank"><span class="jdt">https://sourl.cn/Z9SgrZ</span></a><br /><br />
+2、1000-100(0/9/13/18/20)：<a href="https://sourl.cn/Z9SgrZ" target="_blank"><span class="jdt">https://sourl.cn/Z9SgrZ</span></a><br /><br />
 
-3、600-60(9/12/15/17/20)：<a href="https://sourl.cn/ABnJnd" target="_blank"><span class="jdt">https://sourl.cn/ABnJnd</span></a><br /><br />
+3、600-60(0/9/13/18/20)：<a href="https://sourl.cn/4R7wAF" target="_blank"><span class="jdt">https://sourl.cn/4R7wAF</span></a><br /><br />
 
-4、200-10(9/12/15/17/20)：<a href="https://sourl.cn/ubjRHU" target="_blank"><span class="jdt">https://sourl.cn/ubjRHU</span></a><br /><br />
+4、300-35(0/9/13/18/20)：<a href="https://sourl.cn/783A7F" target="_blank"><span class="jdt">https://sourl.cn/783A7F</span></a><br /><br />
+
+5、300-20(0/9/13/18/20)：<a href="https://sourl.cn/ABnJnd" target="_blank"><span class="jdt">https://sourl.cn/ABnJnd</span></a><br /><br />
+
+6、200-20(0/9/13/18/20)：<a href="https://sourl.cn/HpXsUc" target="_blank"><span class="jdt">https://sourl.cn/HpXsUc</span></a><br /><br />
+
+7、200-10(0/9/13/18/20)：<a href="https://sourl.cn/ubjRHU" target="_blank"><span class="jdt">https://sourl.cn/ubjRHU</span></a><br /><br />
+
+8、120-10(0/9/13/18/20)：<a href="https://sourl.cn/SWr4JU" target="_blank"><span class="jdt">https://sourl.cn/SWr4JU</span></a><br /><br />
                 </div><br /><br />
             </div>
         </div>
@@ -100,35 +105,23 @@
   <script src="../../assets/theme/js/script.js"></script>
   <input name="animation" type="hidden">
   <script type="text/javascript">
-  layui.use(['layer'], function(){
-  	var layer = layui.layer;
-  	$("#open").click(function(){
-	  	var urls = ['https://sourl.cn/yvULeU', 'https://sourl.cn/Z9SgrZ']
-	  	for(var index in urls){
-	  		console.log(urls[index]);
-	  	}
-	  	layer.open({
-			type: 2, 
-			shade:0,
-			content: ['https://sourl.cn/yvULeU'],
-			title:'查看来源数据',
-			area: [ '600px', '430px']
-		});
-	  	layer.open({
-			type: 2, 
-			shade:0,
-			content: ['https://home.m.jd.com/myJd/newhome.action'],
-			title:'查看来源数据',
-			area: [ '600px', '430px']
-		});
-  	});
-  });
   $("#jdjsyj").click(function(){
   	$(".jdj").click();
   });
   $("#jdtsyj").click(function(){
   	$(".jdt").click();
   });
+  	$("#open").click(function(){
+  		alert("测试中...");
+	  	/*r urls = ['https://sourl.cn/yvULeU', 'https://sourl.cn/Z9SgrZ']
+	  	for(var index in urls){
+	  		var url = urls[index];
+	  		console.log(url);
+		  	var iframe = document.createElement('iframe'); 
+			iframe.src=url;  
+			document.body.appendChild(iframe);
+	  	}*/
+  	});
   </script>
   </body>
 </html>
