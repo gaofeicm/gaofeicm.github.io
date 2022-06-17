@@ -105,8 +105,13 @@
             }
             var remainder = total % 11;
             var lastCode = REMAINDER_RULE[remainder];
-            $(".result").html("身份证：" + id + (checkCode === lastCode ? " 是正确的✓" : " 是错误的x"));
-  			$(".alert-success").show(300);
+            if(checkCode === lastCode){
+            	$(".result").html("身份证：" + id + " 是正确的✓");
+  				$(".alert-success").show(300);
+            }else{
+            	$(".result").html("身份证：" + id + " 是错误的x");
+  				$(".alert-danger").show(300);
+            }
         }
   	}
   </script>
